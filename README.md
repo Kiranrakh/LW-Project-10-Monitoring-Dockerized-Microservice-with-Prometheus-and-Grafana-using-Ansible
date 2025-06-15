@@ -42,6 +42,10 @@ This project demonstrates how to monitor a Dockerized microservice application u
 ```bash
 ssh -i ~/.ssh/key.pem ubuntu@<EC2_PUBLIC_IP>
 sudo apt update && sudo apt upgrade -y
+
+- Copy key.pem from laptop to EC2
+scp -i ~/Downloads/key.pem ~/Downloads/key.pem ubuntu@Pub-IP:/home/ubuntu/.ssh/key.pem
+chmod 400 ~/.ssh/key.pem
 ````
 
 ---
